@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<doc>
+  <assembly>
+    <name>AECTech.Dynamo.MongoDB</name>
+  </assembly>
+  <namespaces>
+    <namespace name="AECTech.Dynamo.MongoDB">
+      <category>AECTech</category>
+    </namespace>
+    <namespace name="AECTech.Dynamo.MongoDB.Object">
+      <category>AECTech.MongoDB</category>
+    </namespace>
+  </namespaces>
+  <classes>
+    <!--Remap Class Names-->
+    <!--<class name="AECTech.Dynamo.MongoDB.Object.LuminaireType" shortname="LuminaireType"/>-->
+    <!--<class name="AECTech.DialuxWrapper.Rotation" shortname="Rotation"/>-->
+  </classes>
+</doc>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ae96128d-c072-4a0b-9657-5d7ee98cb12f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AECTech.Dynamo.MongoDB</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MongoDB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Object\FilterDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Object\MongoClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Object\MongoCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Object\MongoDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Object\UpdateDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)AECTech.Dynamo.MongoDB_DynamoCustomization.xml.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
